@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#formInput {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+#formInput th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: normal;
+}
+
+#formInput td {
+    margin-bottom: 20px;
+}
+
+#formInput input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+}
+
+#formInput select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+}
+
+#formInput button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#pegawaiTable {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+#pegawaiTable th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: normal;
+}
+
+#pegawaiTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#pegawaiTable tfoot td {
+    font-weight: bold;
+}
+
+#totalGaji {
+    text-align: center;
+}

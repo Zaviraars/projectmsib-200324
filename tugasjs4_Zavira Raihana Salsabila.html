@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cek Gaji Karyawan</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <form id="formInput">
+            <table style="width: 100%; background-color: rgb(178, 236, 255); margin: auto; border-collapse: collapse; border: 1px solid black">
+                <tr>
+                    <th colspan="2"><b>Cek Gaji Karyawan</b></th>
+                </tr>
+                <tr>
+                    <td style="text-align: center"><label for="nama"><b>Nama</b></label></td>
+                    <td><input style="width: 95%" type="text" name="nama" id="nama" placeholder="Masukan nama anda" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center"><label for="jabatan"><b>Jabatan</b></label></td>
+                    <td>
+                        <select name="jabatan" id="jabatan">
+                            <option value="Manager">Manager</option>
+                            <option value="Asisten Manager">Asisten Manager</option>
+                            <option value="Staff">Staff</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center"><label for="status"><b>Status</b></label></td>
+                    <td>
+                        <select name="status" id="status">
+                            <option value="menikah">Menikah</option>
+                            <option value="belum">Belum Menikah</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; padding: 10px">
+                        <button type="button" onclick="submitForm()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <table id="pegawaiTable" style="width: 100%; margin-top: 20px; display: none">
+            <thead>
+                <tr>
+                    <th>Nama Pegawai</th>
+                    <th>Jabatan</th>
+                    <th>Status</th>
+                    <th>Gaji Pokok</th>
+                    <th>Tunjangan Jabatan</th>
+                    <th>BPJS</th>
+                    <th>Tunjangan Keluarga</th>
+                </tr>
+            </thead>
+            <tbody id="pegawaiBody">
+                <!-- Data pegawai akan ditambahkan oleh JavaScript -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total Gaji</th>
+                    <td colspan="4" id="totalGaji"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <script src="tugas4.js"></script>
+    </body>
+</html>
